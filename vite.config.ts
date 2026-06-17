@@ -12,6 +12,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
+    setupFiles: './src/setup-tests.ts',
+    // forks pool hangs on the worker handshake under Node 26 + Vitest 4;
+    // threads pool starts reliably.
+    pool: 'threads',
   }
 })

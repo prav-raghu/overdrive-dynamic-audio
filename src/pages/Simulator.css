@@ -1,0 +1,22 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.debug-readout {
+  margin-top: 24px;
+}
+
+.debug-readout h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 8px 4px;
+}
+
+.config-hint {
+  text-align: center;
+  font-size: 0.8rem;
+}
